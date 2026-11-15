@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stingo Auto Services | Mobile Mechanic in Montgomery & Bucks County, PA</title>
+  <meta name="description" content="Professional on-site mobile auto repair and diagnostics. Stingo Auto Services brings the shop to your driveway, home, or workplace throughout Montgomery County and Bucks County, PA.">
+  <meta name="robots" content="index, follow">
+  
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:title" content="Stingo Auto Services | Mobile Mechanic in Montgomery & Bucks County, PA">
+  <meta property="og:description" content="Your Driveway. Our Service Bay. Diagnostics, brakes, no-start recovery, and routine maintenance wherever your vehicle sits in Montgomery & Bucks County, PA.">
+  <meta property="og:type" content="website">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0C2340">
+  <meta name="color-scheme" content="dark light">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Schema Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Stingo Auto Services",
+    "description": "Mobile automotive diagnostics and on-location repair serving homes, offices, and roadside locations across Montgomery County and Bucks County, PA.",
+    "telephone": "+1-201-555-7846",
+    "priceRange": "$$",
+    "areaServed": ["Montgomery County, PA", "Bucks County, PA"],
+    "openingHours": "Mo-Sa 07:30-19:00"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Stingo Auto Services Homepage">
+        <span class="brand-badge">S<span class="badge-red">A</span>S</span>
+        <div class="brand-info">
+          <span class="brand-title">STINGO</span>
+          <span class="brand-subtitle">AUTO SERVICES</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#coverage" class="nav-link">Service Area</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+        <!-- Theme Dropdown (System, Light, Dark) -->
+        <div class="theme-select-container">
+          <div class="theme-select-icon-box" aria-hidden="true">
+            <svg id="themeIconSystem" class="theme-select-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <svg id="themeIconSun" class="theme-select-svg" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="themeIconMoon" class="theme-select-svg" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
+          <select id="themeSelect" class="theme-select" aria-label="Theme Selection">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+          <span class="theme-select-caret" aria-hidden="true">▾</span>
+        </div>
+
+        <!-- Direct Phone CTA -->
+        <a href="tel:+12015557846" class="nav-call-btn" aria-label="Call Stingo Auto Services">
+          <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          <span>(201) 555-STIN</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" type="button" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg id="hamburgerIcon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg id="closeMenuIcon" style="display:none;" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer (Direct body child to prevent backdrop-filter stacking trap) -->
+  <div id="mobileDrawer" class="mobile-nav-drawer" aria-hidden="true">
+    <nav class="mobile-drawer-links" aria-label="Mobile Navigation Menu">
+      <a href="#services" class="mobile-drawer-link">
+        <span>Services</span>
+        <span class="mobile-drawer-arrow">→</span>
+      </a>
+      <a href="#process" class="mobile-drawer-link">
+        <span>How It Works</span>
+        <span class="mobile-drawer-arrow">→</span>
+      </a>
+      <a href="#pricing" class="mobile-drawer-link">
+        <span>Pricing & Policies</span>
+        <span class="mobile-drawer-arrow">→</span>
+      </a>
+      <a href="#coverage" class="mobile-drawer-link">
+        <span>Service Area</span>
+        <span class="mobile-drawer-arrow">→</span>
+      </a>
+      <a href="#contact" class="mobile-drawer-link">
+        <span>Direct Contact</span>
+        <span class="mobile-drawer-arrow">→</span>
+      </a>
+      <a href="#faq" class="mobile-drawer-link">
+        <span>FAQ</span>
+        <span class="mobile-drawer-arrow">→</span>
+      </a>
+    </nav>
+
+      <div class="mobile-drawer-theme">
+        <label for="mobileThemeSelect" class="mobile-drawer-theme-label">Theme Mode:</label>
+        <div class="theme-select-container mobile-select-full">
+          <div class="theme-select-icon-box" aria-hidden="true">
+            <svg id="mobileThemeIconSystem" class="theme-select-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <svg id="mobileThemeIconSun" class="theme-select-svg" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg id="mobileThemeIconMoon" class="theme-select-svg" style="display:none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </div>
+          <select id="mobileThemeSelect" class="theme-select" aria-label="Mobile Theme Selection">
+            <option value="system">System</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+          <span class="theme-select-caret" aria-hidden="true">▾</span>
+        </div>
+      </div>
+
+      <a href="tel:+12015557846" class="btn btn-primary" style="width: 100%;">
+        <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        <span>Call (201) 555-7846</span>
+      </a>
+      <a href="sms:+12015557846" class="btn btn-secondary" style="width: 100%;">
+        <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span>Text Technician</span>
+      </a>
+      <div class="mobile-drawer-meta">
+        <span>Mon–Sat 7:30AM–7:00PM · Montgomery & Bucks County, PA</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="top">
+      <div class="container hero-grid">
+        <!-- Hero Copy -->
+        <div class="hero-copy">
+          <div class="status-badge">
+            <span class="status-pulse"></span>
+            <span>Mobile Mechanics Active · Montgomery & Bucks County, PA</span>
+          </div>
+
+          <h1 class="hero-title">
+            Your Driveway.<br>
+            <span class="highlight-blue"><em>Our Service Bay.</em></span>
+          </h1>
+
+          <p class="hero-lead">
+            Professional on-location automotive diagnostics, no-start recovery, and essential repairs delivered directly to your home, office parking lot, or remote location. No tow trucks needed.
+          </p>
+
+          <div class="hero-actions">
+            <a href="tel:+12015557846" class="btn btn-primary" aria-label="Call Stingo Auto Services now">
+              <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+              </svg>
+              <span>Call For Service Now</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email Dispatch</span>
+            </a>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>Upfront Flat Quotes</span>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>No Work Without Approval</span>
+            </div>
+            <div class="trust-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Same-Day Remote Help</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Help Dispatch Panel -->
+        <aside class="hero-panel">
+          <div class="panel-header">
+            <span class="panel-tag">DIRECT MOBILE DISPATCH</span>
+            <span class="panel-hours">Mon - Sat: 7:30AM - 7:00PM</span>
+          </div>
+
+          <div class="panel-body">
+            <h3>Need Help Where You Sit?</h3>
+            <p>Skip the dealership wait and towing fee. Speak directly with a mobile technician to review symptoms, get an upfront price, and schedule service.</p>
+
+            <div class="call-box">
+              <span class="call-box-label">Technician Direct Line</span>
+              <a href="tel:+12015557846" class="call-box-number" aria-label="Call Stingo Auto at 201-555-7846">(201) 555-7846</a>
+            </div>
+
+            <div class="panel-features">
+              <div class="panel-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>We bring tools, parts & scanners to you</span>
+              </div>
+              <div class="panel-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Homes, apartments, office lots, or curbside</span>
+              </div>
+              <div class="panel-feature-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Clear diagnosis before any wrench is turned</span>
+              </div>
+            </div>
+
+            <a href="sms:+12015557846" class="btn btn-accent panel-footer-btn">
+              <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Text Our Dispatcher</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-muted" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-pip"></span>
+            <span>Mobile Capabilities</span>
+          </div>
+          <h2 class="section-title">Diagnostics & Auto Care That Come To You</h2>
+          <p class="section-desc">
+            Equipped with pro-grade scan tools, power equipment, and specialized repair gear, Stingo Auto Services handles common failures right where your car is parked.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <span class="service-badge-num">01</span>
+            </div>
+            <h3 class="service-title">Computer Diagnostics</h3>
+            <p class="service-desc">
+              Check engine lights, ABS/airbag warnings, drivability stumbles, sensor diagnostics, and complete OBD-II live data analysis.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Live sensor & ECU telemetry
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Misfire & fuel trim tracking
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Pre-purchase inspection scans
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                  <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                  <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                  <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+                </svg>
+              </div>
+              <span class="service-badge-num">02</span>
+            </div>
+            <h3 class="service-title">Brakes & Rotors</h3>
+            <p class="service-desc">
+              Squeaking, grinding, or soft brake pedals repaired in your driveway. Complete pad replacement, rotor renewal, and fluid checks.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Ceramic & semi-metallic pads
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Rotor replacement & cleaning
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Caliper inspections & slides
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M6 7V4h4v3"></path>
+                  <path d="M14 7V4h4v3"></path>
+                  <line x1="6.5" y1="12" x2="9.5" y2="12"></line>
+                  <line x1="14.5" y1="12" x2="17.5" y2="12"></line>
+                  <line x1="16" y1="10.5" x2="16" y2="13.5"></line>
+                </svg>
+              </div>
+              <span class="service-badge-num">03</span>
+            </div>
+            <h3 class="service-title">No-Start & Batteries</h3>
+            <p class="service-desc">
+              Car won't turn over? Rapid clicking or complete silence? We perform on-site electrical testing, jump starts, and new battery installs.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Digital load & cranking tests
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                On-location battery replacement
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Terminal deoxidization & wiring
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                </svg>
+              </div>
+              <span class="service-badge-num">04</span>
+            </div>
+            <h3 class="service-title">Starting & Alternators</h3>
+            <p class="service-desc">
+              Diagnosing dead charging systems, slipping serpentine belts, failed starter motors, and faulty ignition relays on-location.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Starter motor bench testing
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Alternator charging output
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Serpentine belt renewal
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <span class="service-badge-num">05</span>
+            </div>
+            <h3 class="service-title">Tune-Up & Fluids</h3>
+            <p class="service-desc">
+              Keep your vehicle running smoothly. Spark plugs, ignition coils, engine air filters, cabin filters, and essential fluid top-offs.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Spark plugs & coil packs
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Coolant & brake fluid testing
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Air & cabin filtration refresh
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card">
+            <div class="service-card-top">
+              <div class="service-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 12 12 16 12 8"></polygon>
+                  <line x1="16" y1="12" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <span class="service-badge-num">06</span>
+            </div>
+            <h3 class="service-title">Roadside & Remote Help</h3>
+            <p class="service-desc">
+              Stuck on the road or in a remote parking lot? Fast assistance for emergency battery jumps, spare tire mounting, and fuel delivery.
+            </p>
+            <ul class="service-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Emergency spare tire installs
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Heavy-duty boost jump starts
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Emergency lockout assistance
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process: How It Works -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-pip"></span>
+            <span>Simple Workflow</span>
+          </div>
+          <h2 class="section-title">Request. Confirm. Fixed.</h2>
+          <p class="section-desc">
+            No towing, no stressful waiting rooms, and no mysterious charges. You stay in full control from first call to completed repair.
+          </p>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-card">
+            <div class="step-indicator">
+              <span class="step-num">01</span>
+              <span class="step-tag">Step 1</span>
+            </div>
+            <h3 class="step-title">Tell Us What's Happening</h3>
+            <p class="step-desc">
+              Call or send a quick email with your vehicle's make, model, location, and the issue you're encountering.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="step-indicator">
+              <span class="step-num">02</span>
+              <span class="step-tag">Step 2</span>
+            </div>
+            <h3 class="step-title">Clear Estimate & Timing</h3>
+            <p class="step-desc">
+              We review symptoms, confirm parts availability, and provide an upfront price quote before dispatching the van.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="step-indicator">
+              <span class="step-num">03</span>
+              <span class="step-tag">Step 3</span>
+            </div>
+            <h3 class="step-title">Technician Arrives To You</h3>
+            <p class="step-desc">
+              Our mobile mechanic arrives fully equipped at your driveway, office parking, or remote spot to diagnose and repair.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing & Policies -->
+    <section class="section section-muted" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-pip"></span>
+            <span>Honest Rates</span>
+          </div>
+          <h2 class="section-title">Transparent Starting Pricing</h2>
+          <p class="section-desc">
+            We believe in straight talk and zero surprise add-ons. Here is how our mobile service rates begin.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Pricing Breakdown -->
+          <div class="pricing-card">
+            <h3>Standard Mobile Rates</h3>
+            <p>Labor and parts are quoted transparently based on vehicle make and repair complexity.</p>
+
+            <div class="rate-list">
+              <div class="rate-item">
+                <span class="rate-name">On-Site Diagnostic & Computer Scan</span>
+                <span class="rate-price">From $79</span>
+              </div>
+              <div class="rate-item">
+                <span class="rate-name">Local Travel Fee (Within Primary Radius)</span>
+                <span class="rate-price">From $25</span>
+              </div>
+              <div class="rate-item">
+                <span class="rate-name">Jump Start & Battery Load Test</span>
+                <span class="rate-price">From $65</span>
+              </div>
+              <div class="rate-item">
+                <span class="rate-name">Mobile Brake Service (Axle Labor)</span>
+                <span class="rate-price">From $120</span>
+              </div>
+            </div>
+
+            <p class="rate-disclaimer">
+              * Long distance travel quoted upon request. Replacement parts are billed at competitive local distributor rates with warranty.
+            </p>
+          </div>
+
+          <!-- Policy & Guarantee -->
+          <div class="policy-card">
+            <h3>Our Service Commitments</h3>
+            <p>The core rules we stand by when working on your vehicle at your location.</p>
+
+            <div class="policy-badges">
+              <div class="policy-badge-item">
+                <div class="policy-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="policy-badge-content">
+                  <strong>Zero Obligation Inquiry</strong>
+                  <span>Calling or emailing for a preliminary consult or quote is always free.</span>
+                </div>
+              </div>
+
+              <div class="policy-badge-item">
+                <div class="policy-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="policy-badge-content">
+                  <strong>Prior Approval Guarantee</strong>
+                  <span>No wrench is turned and no part is installed without your explicit verbal or written sign-off.</span>
+                </div>
+              </div>
+
+              <div class="policy-badge-item">
+                <div class="policy-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="policy-badge-content">
+                  <strong>Clean Driveway Guarantee</strong>
+                  <span>We use protective fluid mats and heavy-duty drip pans to leave your driveway as clean as we found it.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area & Driveway Requirements -->
+    <section class="section" id="coverage">
+      <div class="container">
+        <div class="coverage-banner">
+          <div class="coverage-copy">
+            <div class="eyebrow" style="color: #60A5FA;">
+              <span class="eyebrow-pip" style="background-color: #EF4444;"></span>
+              <span>Where We Travel</span>
+            </div>
+            <h3>Serving Montgomery County & Bucks County, Pennsylvania</h3>
+            <p>
+              Based locally in southeastern Pennsylvania, Stingo Auto Services travels directly to residential driveways, corporate parking complexes, apartment garages, and safe roadside shoulders.
+            </p>
+            <div class="coverage-badges">
+              <span class="area-pill">Montgomery County, PA</span>
+              <span class="area-pill">Bucks County, PA</span>
+              <span class="area-pill">King of Prussia</span>
+              <span class="area-pill">Doylestown</span>
+              <span class="area-pill">Lansdale / North Wales</span>
+              <span class="area-pill">Norristown & Plymouth Meeting</span>
+              <span class="area-pill">Newtown & Yardley</span>
+              <span class="area-pill">Extended Regional Travel</span>
+            </div>
+          </div>
+
+          <div class="coverage-box">
+            <h4>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              Location Safety Guidelines
+            </h4>
+            <ul>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Firm, level surface (concrete, asphalt driveway, or flat parking stall).
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                Sufficient clearance for technician and mobile service van.
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                For highway breakdowns, please stand in a safe zone away from traffic.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Direct Contact Hub -->
+    <section class="section section-muted" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-pip"></span>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Direct Contact · No Complex Forms</h2>
+          <p class="section-desc">
+            We value your time. Call or text directly, or click below to launch an instant email with your vehicle details pre-filled.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Card 1: Direct Phone Call & SMS -->
+          <div class="contact-card phone-focus">
+            <div class="contact-card-header">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Telephone & Text Hotline</h3>
+                <small style="color: var(--text-muted);">Fastest response for urgent car concerns</small>
+              </div>
+            </div>
+
+            <p>
+              Speak immediately with our lead technician. If we are under a vehicle or driving to a dispatch, leave a brief message or text and we will call you back promptly.
+            </p>
+
+            <div class="direct-number-display">
+              <small>Call or Text 24/7 Dispatch</small>
+              <a href="tel:+12015557846">(201) 555-7846</a>
+            </div>
+
+            <div class="contact-action-group">
+              <a href="tel:+12015557846" class="btn btn-primary">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                <span>Call (201) 555-7846</span>
+              </a>
+              <a href="sms:+12015557846" class="btn btn-secondary">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Send SMS Text</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Interactive Pre-Formatted Email Dispatch -->
+          <div class="contact-card email-focus">
+            <div class="contact-card-header">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3>Email Service Dispatch</h3>
+                <small style="color: var(--text-muted);">Non-urgent quotes & weekend planning</small>
+              </div>
+            </div>
+
+            <p>
+              Fill in quick details below to automatically generate an email with your vehicle specs and symptoms ready to send to our team.
+            </p>
+
+            <div class="email-helper-box">
+              <div class="helper-field">
+                <label class="helper-label" for="helperVehicle">Vehicle (Year, Make, Model)</label>
+                <input type="text" id="helperVehicle" class="helper-input" placeholder="e.g. 2018 Toyota RAV4">
+              </div>
+              <div class="helper-field">
+                <label class="helper-label" for="helperLocation">Location / City or ZIP</label>
+                <input type="text" id="helperLocation" class="helper-input" placeholder="e.g. Doylestown, PA or Norristown, PA 19401">
+              </div>
+              <div class="helper-field">
+                <label class="helper-label" for="helperConcern">Primary Concern / Symptoms</label>
+                <input type="text" id="helperConcern" class="helper-input" placeholder="e.g. Battery dead / brake squeal / check engine">
+              </div>
+            </div>
+
+            <div class="contact-action-group">
+              <button id="sendEmailBtn" class="btn btn-accent" type="button">
+                <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Launch Email in Your App</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">
+            <span class="eyebrow-pip"></span>
+            <span>Common Questions</span>
+          </div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Everything you need to know about getting your car serviced right where it is parked.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button class="faq-question" type="button">
+              <span>What if my vehicle isn't drivable or safe to start?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              That's exactly why we exist! If your vehicle will not crank, makes severe grinding noises, or is unsafe to drive, keep it parked. Give us a call, and our mobile technician brings the testing equipment directly to your vehicle's location so you avoid costly towing fees.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What type of space or location do you need to work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              We require a reasonably flat, solid ground surface such as a residential asphalt or concrete driveway, a designated parking stall in an office lot, or an apartment complex parking area with room for our mobile service van. For safety, we avoid steep inclines or gravel inclines.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>How do you handle replacement parts?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              We source OEM or top-grade premium aftermarket parts directly from established automotive supply partners. If you have already purchased your own quality parts, we can also inspect and install them, provided they match your vehicle's exact specifications.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What happens if weather is bad (rain or snow)?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Light rain can be handled under our mobile service awnings. For heavy downpours, blizzards, or extreme lightning conditions, we will work with you to either service the car in your covered garage or reschedule to the earliest safe window.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What payment methods do you accept on site?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              We accept all major credit and debit cards (Visa, MasterCard, Amex, Discover), Apple Pay, Google Pay, Zelle, and cash. You receive an itemized digital receipt sent immediately to your email or phone upon completion.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="#top" class="brand" aria-label="Stingo Auto Services">
+            <span class="brand-badge">S<span class="badge-red">A</span>S</span>
+            <div class="brand-info">
+              <span class="brand-title">STINGO</span>
+              <span class="brand-subtitle">AUTO SERVICES</span>
+            </div>
+          </a>
+          <p>
+            Your on-demand mobile automotive service. Expert diagnostics, brakes, no-start recovery, and routine maintenance delivered to your driveway.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#pricing">Transparent Rates</a></li>
+            <li><a href="#coverage">Coverage Radius</a></li>
+            <li><a href="#faq">Frequently Asked</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <ul>
+            <li><strong style="color:var(--text-primary); font-size:1.05rem;">(201) 555-7846</strong></li>
+            <li>dispatch@stingoautoservices.com</li>
+            <li>Monday – Saturday: 7:30 AM – 7:00 PM</li>
+            <li>Sunday: Emergency Dispatch By Request</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Stingo Auto Services. All rights reserved. Professional Mobile Automotive Care.
+        </div>
+        <div>
+          Inspired by NY Giants & Yankees colors · Built with pride.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Sticky Call Bar (Small Screens) -->
+  <aside class="mobile-call-bar" aria-label="Mobile quick call bar">
+    <div class="mobile-call-bar-inner">
+      <a href="tel:+12015557846" class="btn btn-primary">
+        <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        <span>Call (201) 555-7846</span>
+      </a>
+      <a href="#contact" class="btn btn-secondary">
+        <svg class="btn-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span>Email Dispatch</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- JavaScript Application Logic -->
+  <script src="main.js"></script>
+</body>
+</html>
