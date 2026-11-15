@@ -3,14 +3,12 @@
  * - Theme Switcher (Dark & Light Mode with localStorage & OS preference)
  * - Mobile Navigation Drawer
  * - FAQ Accordion
- * - Interactive Pre-Formatted Email Dispatch Generator
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initMobileMenu();
   initFaqAccordion();
-  initEmailDispatch();
 });
 
 /* --------------------------------------------------------------------------
@@ -196,42 +194,5 @@ function initFaqAccordion() {
         item.classList.add('active');
       }
     });
-  });
-}
-
-/* --------------------------------------------------------------------------
-   4. Interactive Email Dispatch Generator
-   -------------------------------------------------------------------------- */
-function initEmailDispatch() {
-  const sendEmailBtn = document.getElementById('sendEmailBtn');
-  const vehicleInput = document.getElementById('helperVehicle');
-  const locationInput = document.getElementById('helperLocation');
-  const concernInput = document.getElementById('helperConcern');
-
-  if (!sendEmailBtn) return;
-
-  sendEmailBtn.addEventListener('click', () => {
-    const vehicle = vehicleInput && vehicleInput.value.trim() ? vehicleInput.value.trim() : '[Not Specified]';
-    const location = locationInput && locationInput.value.trim() ? locationInput.value.trim() : '[Not Specified]';
-    const concern = concernInput && concernInput.value.trim() ? concernInput.value.trim() : '[Please Describe Concern]';
-
-    const recipient = 'dispatch@stingoautoservices.com';
-    const subject = `Mobile Service Request - ${vehicle} (${location})`;
-
-    const body = 
-`Hello Stingo Auto Services Dispatch,
-
-I would like to request on-site mobile service with the following details:
-
-- Vehicle (Year/Make/Model): ${vehicle}
-- Service Location / Address: ${location}
-- Issue / Symptoms: ${concern}
-
-Please let me know your earliest availability and an initial quote.
-
-Thank you!`;
-
-    const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoUrl;
   });
 }
