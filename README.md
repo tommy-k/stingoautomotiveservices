@@ -26,7 +26,7 @@
 
 - 📱 **Mobile-First & Fully Responsive** – Built for seamless use across smartphones, tablets, and desktops.
 - 🌓 **Dynamic Theme Toggle** – Switch effortlessly between **Dark Mode** 🌙, **Light Mode** ☀️, or **System Preference** 💻.
-- 📋 **Interactive Service Intake** – Vehicle info, service needs, and location intake generating one-click email/phone dispatch requests.
+- 📋 **Streamlined Service Request** – Clear email intake guidelines (Name, Address, Vehicle specs, and Service requested) with direct email and call triggers.
 - ❓ **Interactive FAQ Accordion** – Smooth expand/collapse answers to common customer questions.
 - ⚡ **Zero Heavy Dependencies** – Ultra-fast static performance using pure semantic HTML, vanilla JavaScript, and modern CSS.
 - 🤖 **Automated CI/CD** – Built-in GitHub Actions workflow to deploy updates straight to GitHub Pages upon push.
