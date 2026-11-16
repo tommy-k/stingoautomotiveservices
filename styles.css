@@ -1687,3 +1687,209 @@ body.menu-open .mobile-call-bar {
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
+
+/* ==========================================================================
+   Legal & Policy Page Styles (/terms & /privacy)
+   ========================================================================== */
+.legal-main {
+  padding-top: 3.5rem;
+  padding-bottom: 6rem;
+  min-height: calc(100vh - 400px);
+}
+
+.legal-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.legal-header .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.legal-meta {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.legal-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 3rem 2.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+@media (max-width: 768px) {
+  .legal-card {
+    padding: 2rem 1.25rem;
+  }
+}
+
+.legal-section {
+  margin-bottom: 2.75rem;
+}
+
+.legal-section:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section h2 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.legal-section h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-section p, .legal-section li {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.legal-section ul, .legal-section ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-section li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-section strong {
+  color: var(--text-primary);
+}
+
+/* Callout Notice Boxes */
+.legal-callout {
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border-left: 4px solid transparent;
+}
+
+.legal-callout-icon {
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+  width: 22px;
+  height: 22px;
+}
+
+.legal-callout-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.legal-callout-content {
+  flex: 1;
+}
+
+.legal-callout-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.legal-callout p {
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+/* Blue Info Callout (AI Disclosures & Google Processing) */
+.legal-callout-info {
+  background-color: var(--accent-blue-subtle);
+  border-left-color: var(--accent-blue);
+}
+.legal-callout-info .legal-callout-title {
+  color: var(--accent-blue);
+}
+.legal-callout-info .legal-callout-icon {
+  color: var(--accent-blue);
+}
+
+/* Red Alert Callout (Sensitive Data & Liability Warnings) */
+.legal-callout-warning {
+  background-color: var(--accent-red-subtle);
+  border-left-color: var(--accent-red);
+}
+.legal-callout-warning .legal-callout-title {
+  color: var(--accent-red);
+}
+.legal-callout-warning .legal-callout-icon {
+  color: var(--accent-red);
+}
+
+/* Green Success Callout (No-Resell Guarantee) */
+.legal-callout-success {
+  background-color: var(--status-green-subtle);
+  border-left-color: var(--status-green);
+}
+.legal-callout-success .legal-callout-title {
+  color: var(--status-green);
+}
+.legal-callout-success .legal-callout-icon {
+  color: var(--status-green);
+}
+
+/* Breadcrumb & Navigation helper */
+.legal-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+.legal-breadcrumb:hover {
+  text-decoration: underline;
+}
+
+/* Footer Legal Links */
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.footer-legal a {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+.footer-legal a:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+.footer-legal-sep {
+  color: var(--border-color);
+  font-size: 0.85rem;
+}
+

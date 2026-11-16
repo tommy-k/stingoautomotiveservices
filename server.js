@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
   '.css': 'text/css; charset=UTF-8',
@@ -18,7 +18,26 @@ const server = http.createServer((req, res) => {
   let reqPath = req.url.split('?')[0];
   if (reqPath === '/') reqPath = '/index.html';
 
-  const filePath = path.join(__dirname, reqPath);
+  let filePath = path.join(__dirname, reqPath);
+
+  // Clean URL and directory routing resolution
+  if (fs.existsSync(filePath)) {
+    const stat = fs.statSync(filePath);
+    if (stat.isDirectory()) {
+      const indexPath = path.join(filePath, 'index.html');
+      if (fs.existsSync(indexPath)) {
+        filePath = indexPath;
+      }
+    }
+  } else {
+    // If not found directly, check for clean extensionless HTML or directory index
+    if (fs.existsSync(filePath + '.html')) {
+      filePath = filePath + '.html';
+    } else if (fs.existsSync(path.join(filePath, 'index.html'))) {
+      filePath = path.join(filePath, 'index.html');
+    }
+  }
+
   const ext = path.extname(filePath).toLowerCase();
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
@@ -36,6 +55,14 @@ const server = http.createServer((req, res) => {
       res.end(content);
     }
   });
+});
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.warn('Port ' + PORT + ' is already in use; server listen skipped.');
+  } else {
+    throw err;
+  }
 });
 
 server.listen(PORT, '127.0.0.1', () => {
